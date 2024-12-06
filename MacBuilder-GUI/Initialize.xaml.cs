@@ -98,7 +98,7 @@ namespace MacBuilder_GUI
                 Global.hardwareInfo = hardwareInfo;
 
                 Logger.Log($"Detected CPU: {hardwareInfo.CPU.Name} supported: {hardwareInfo.CPU.IsCPUSupported}");
-                Logger.Log($"Detected CPU: {hardwareInfo.GPU.Model} supported: {hardwareInfo.GPU.IsGPUSupported}");
+                Logger.Log($"Detected GPU: {hardwareInfo.GPU.Model} supported: {hardwareInfo.GPU.IsGPUSupported}");
 
                 if (hardwareInfo.GPU.IsGPUSupported && hardwareInfo.CPU.IsCPUSupported && hardwareInfo.Supported.SupportedMacVersions != null && hardwareInfo.Supported.isUEFISupported)
                 {
